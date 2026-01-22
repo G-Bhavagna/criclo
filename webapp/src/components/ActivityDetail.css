@@ -1,0 +1,187 @@
+.activity-detail-modal {
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.activity-detail-header {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e8eaed;
+}
+
+.activity-type-badge-large {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.activity-detail-header h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #202124;
+}
+
+.activity-description {
+  font-size: 15px;
+  color: #5f6368;
+  line-height: 1.6;
+}
+
+.activity-detail-info {
+  padding: 20px 0;
+  border-bottom: 1px solid #e8eaed;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.info-label {
+  font-size: 14px;
+  color: #5f6368;
+  font-weight: 500;
+}
+
+.info-value {
+  font-size: 14px;
+  color: #202124;
+  font-weight: 600;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-open {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-closed {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-cancelled {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.activity-members-section {
+  padding: 20px 0;
+}
+
+.activity-members-section h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: #202124;
+}
+
+.members-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.member-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  transition: background 0.3s ease;
+}
+
+.member-card:hover {
+  background: #e8eaed;
+}
+
+.member-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.member-info {
+  flex: 1;
+}
+
+.member-name {
+  font-weight: 600;
+  font-size: 15px;
+  color: #202124;
+}
+
+.member-role {
+  font-size: 13px;
+  color: #5f6368;
+  margin-top: 2px;
+}
+
+.loading-text,
+.no-members {
+  text-align: center;
+  color: #5f6368;
+  font-size: 14px;
+  padding: 20px;
+}
+
+.activity-owner-actions {
+  display: flex;
+  gap: 12px;
+  padding-top: 20px;
+  border-top: 1px solid #e8eaed;
+}
+
+.btn-close-activity,
+.btn-cancel-activity {
+  flex: 1;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.btn-close-activity {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.btn-close-activity:hover {
+  background: #ffc107;
+  color: white;
+}
+
+.btn-cancel-activity {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.btn-cancel-activity:hover {
+  background: #dc3545;
+  color: white;
+}

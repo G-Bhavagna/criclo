@@ -1,0 +1,27 @@
+package com.circlo.joinrequest.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class JoinRequestDTO {
+
+  private Long id;
+  private Long activityId;
+  private String activityTitle;
+  private Long userId;
+  private String userName;
+  private String userEmail;
+  private String status;
+  private String message;
+  private String reviewMessage;
+  private LocalDateTime createdAt;
+
+}

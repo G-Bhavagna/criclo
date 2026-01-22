@@ -1,0 +1,180 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.navbar {
+  background: white;
+  border-bottom: 1px solid #E8EAED;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  color: #5B64E3;
+}
+
+.brand-icon {
+  font-size: 28px;
+}
+
+.brand-name {
+  background: linear-gradient(135deg, #5B64E3 0%, #8B5FE3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.nav-links {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s;
+  color: #7F8C8D;
+}
+
+.nav-link:hover {
+  background: #F8F9FA;
+}
+
+.nav-link.active {
+  background: rgba(91, 100, 227, 0.1);
+}
+
+.nav-icon {
+  font-size: 20px;
+}
+
+.nav-label {
+  font-size: 16px;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.user-name {
+  font-weight: 600;
+  color: #2C3E50;
+  font-size: 14px;
+}
+
+.user-email {
+  font-size: 12px;
+  color: #7F8C8D;
+}
+
+.btn-logout {
+  padding: 8px 16px;
+  background: transparent;
+  border: 2px solid #E8EAED;
+  color: #7F8C8D;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-logout:hover {
+  border-color: #D63031;
+  color: #D63031;
+  background: #FEE;
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  background: #F8F9FA;
+}
+
+@media (max-width: 968px) {
+  .navbar-content {
+    padding: 0 16px;
+  }
+  
+  .nav-label {
+    display: none;
+  }
+  
+  .nav-links {
+    gap: 4px;
+  }
+  
+  .nav-link {
+    padding: 10px 12px;
+  }
+  
+  .user-info {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar-brand {
+    font-size: 20px;
+  }
+  
+  .brand-icon {
+    font-size: 24px;
+  }
+  
+  .nav-icon {
+    font-size: 24px;
+  }
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #e74c3c;
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 10px;
+  min-width: 18px;
+  text-align: center;
+}
